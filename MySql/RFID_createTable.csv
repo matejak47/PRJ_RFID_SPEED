@@ -1,0 +1,13 @@
+Table,"Create Table"
+rfid_reader,"CREATE TABLE `rfid_reader` (
+  `Expected_Speed` int NOT NULL,
+  `Variant` varchar(10) NOT NULL,
+  `SPZ` varchar(100) NOT NULL,
+  `Antena` int NOT NULL,
+  `First_time` bigint NOT NULL,
+  `Last_time` bigint NOT NULL,
+  `Seen` int NOT NULL,
+  `Pass_Number` int NOT NULL,
+  `RSSI_AVG` double(50,2) NOT NULL,
+  PRIMARY KEY (`Antena`,`First_time`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci"
